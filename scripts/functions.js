@@ -145,7 +145,7 @@ $(document).on('pageshow', '#login',  function(){
         var password = $("#txtPassword").val().trim();
         if(username == "" || password == ""){
            navigator.notification.alert("Please Fill The Details Completely",callBack, 'Error');
-           return false;
+            return false;
         }
         $.mobile.showPageLoadingMsg();
         $.ajax({
