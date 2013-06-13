@@ -1,0 +1,7 @@
+.ui-border{
+	border: 0px 0px 1px 0px solid #2A2A2A;
+	border-collapsible:collapsible;
+}
+.btn-inner{
+	padding:0.2em 0.6em 0.2em 0.8em;
+}
