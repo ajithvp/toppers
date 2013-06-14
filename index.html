@@ -13,6 +13,28 @@
         <script type="text/javascript" src="PushNotification.js"></script>
         <script type="text/javascript" src="scripts/index.js"></script>
         <script type="text/javascript" src="scripts/functions.js"></script> 
+        <script type="text/javascript">
+
+        document.addEventListener("deviceready", loaded, false);
+
+        function loaded()
+        {
+            
+                alert("cordova loaded");
+            
+        }
+
+        function showExternalPage()
+        {
+
+                alert("in show pmt page");
+            
+
+            Cordova.exec("ChildBrowserCommand.showWebPage", "http://www.google.com/" );
+        }
+
+        </script>
+
     </head>   
     <body>              
         
@@ -130,7 +152,7 @@
 					</div>
 					<div class="ui-block-b">
 						<label>
-							<a href="http://www.topperseducation.com" target="_blank">www.topperseducation.com</a>
+							<a href="#" onclick="showExternalPage()" >www.topperseducation.com</a>
 						</label>
 					</div>	
 				</fieldset>
