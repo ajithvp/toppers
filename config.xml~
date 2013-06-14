@@ -38,5 +38,6 @@
     <gap:splash src="images/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     
     <gap:plugin name="GenericPush"/>
+    <gap:plugin name="ChildBrowser" version="4.0.0" />
    
 </widget>
