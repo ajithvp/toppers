@@ -12,42 +12,10 @@
         <script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script> 
         <script type="text/javascript" src="PushNotification.js"></script>
         <script type="text/javascript" src="scripts/index.js"></script>
-        <script type="text/javascript" src="scripts/functions.js"></script> 
-        <script type="text/javascript">
-
-       try{
-	alert("dd");
-        $(document).on("deviceready", loaded, false);
-        alert("dd");
-}catch(e){
-alert("ss"+e);
-}
-
-        function loaded()
-        {
-            
-                alert("cordova loaded");
-            
-        }
-
-        function showExternalPage()
-        {
-
-                alert("in show pmt page");
-            
-
-            Cordova.exec("ChildBrowserCommand.showWebPage", "http://www.google.com/" );
-        }
-
-        </script>
-
+        <script type="text/javascript" src="scripts/functions.js"></script>
     </head>   
     <body>              
-        
-
-        
-        
-        <div data-role="page" id="home" data-theme="b">         
+    	<div data-role="page" id="home" data-theme="b">         
             <div data-role="header" data-theme="b">    
                 <h1>
                     Toppers
@@ -98,7 +66,7 @@ alert("ss"+e);
 					</div>
 					<div class="ui-block-b">
 						<label>
-							<a href="http://www.topperseducation.com" target="_blank">www.topperseducation.com</a>
+							<a href="#" onclick="window.open('http://www.topperseducation.com', '_system', 'location=yes');" >www.topperseducation.com</a>
 						</label>
 					</div>	
 				</fieldset>
@@ -133,10 +101,6 @@ alert("ss"+e);
 				</fieldset>
 				<br/>
 				
-				<p><a href="#" onclick="window.open('http://www.nhl.com', '_blank', 'location=yes');">_blank</a></p> 
-<p><a href="#" onclick="window.open('http://www.nhl.com', '_system', 'location=yes');">_system</a></p> 
-<p><a href="#" onclick="window.open('http://www.nhl.com', '_self', 'location=yes');">_self</a></p> 
-				
 				<fieldset class="ui-grid-c" style="font-size:12px;">
 					<div class="ui-block-a">
 						<label>Name : </label>
@@ -163,7 +127,7 @@ alert("ss"+e);
 					</div>
 					<div class="ui-block-b">
 						<label>
-							<a href="#" onclick="showExternalPage()" >www.topperseducation.com</a>
+							<a href="#" onclick="window.open('http://www.topperseducation.com', '_system', 'location=yes');" >www.topperseducation.com</a>
 						</label>
 					</div>	
 				</fieldset>
