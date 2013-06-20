@@ -15,7 +15,13 @@
         <script type="text/javascript" src="scripts/functions.js"></script> 
         <script type="text/javascript">
 
-        document.addEventListener("deviceready", loaded, false);
+       try{
+	alert("dd");
+        $(document).on("deviceready", loaded, false);
+        alert("dd");
+}catch(e){
+alert("ss"+e);
+}
 
         function loaded()
         {
