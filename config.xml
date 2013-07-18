@@ -37,7 +37,7 @@
     <gap:splash src="images/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="images/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     
-    <gap:plugin name="GenericPush"/>
+    <gap:plugin name="com.adobe.plugins.pushplugin" />
     <gap:plugin name="InAppBrowser" />
    
 </widget>
