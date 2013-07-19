@@ -8,9 +8,10 @@
         <script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>   
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="cordova-2.7.0.js"></script>
-        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>     
+        <script type="text/javascript" src="phonegap.js"></script>     
         <script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script> 
         <script type="text/javascript" src="PushNotification.js"></script>
+        <script type="text/javascript" src="childbrowser.js"></script>
         <script type="text/javascript" src="scripts/index.js"></script>
         <script type="text/javascript" src="scripts/functions.js"></script>
     </head>   
@@ -66,7 +67,7 @@
 					</div>
 					<div class="ui-block-b">
 						<label>
-							<a href="#" onclick="window.open('http://www.topperseducation.com', '_system', 'location=yes');" >www.topperseducation.com</a>
+							<a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.topperseducation.com', { showLocationBar: false });" >www.topperseducation.com</a>
 						</label>
 					</div>	
 				</fieldset>
@@ -127,7 +128,7 @@
 					</div>
 					<div class="ui-block-b">
 						<label>
-							<a href="#" onclick="window.open('http://www.topperseducation.com', '_system', 'location=yes');" >www.topperseducation.com</a>
+							<a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.topperseducation.com', { showLocationBar: false });" >www.topperseducation.com</a>
 						</label>
 					</div>	
 				</fieldset>
