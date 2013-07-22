@@ -172,7 +172,7 @@ function loadURL(url){
     return false;
 } 
 
-var url = "http://www.topperseducation.com/webservices/ajax.php";
+var url = "http://www.topperseducation.com/webservices/ajaxs.php";
 var heading = '<div style="height:70px; background:url(images/icon.png) no-repeat; padding-left:60px;">';
 	heading += '<h3 style="color:#626262;margin:0px;padding-top:10px;">TOPPERS EDUCATION CENTRE</h3>';
 	heading += '<h6 style="color:#000000;margin:0px;font-size:10px;">CBSE/IGCSE/ICSE/IB/ A LEVEL CURRICULUM</h6>';
@@ -543,6 +543,7 @@ function onSuccess(data){
 }
 
 function onerror(data){
+	alert(JSON.stringify(data))
     navigator.notification.alert("Error In Your Internet Connection",callBack,'Error');
     $.mobile.hidePageLoadingMsg();
     $("#txtUserName").val("");
